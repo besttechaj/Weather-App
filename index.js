@@ -23,7 +23,7 @@ const replaceVal = (tempVal, orgVal) => {
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
     requests(
-      'https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=metric&appid=199f221bdf35cc500b974dd35c22161c'
+      'https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=metric&appid=yourApiKey'
     )
       .on('data', function (chunk) {
         //we are getting the data in json format
